@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A responsive student-created ISRO-inspired website showcasing Indian space missions, news, and learning resources.">
+  <meta name="theme-color" content="#061b35">
+  <title>ISRO | Indian Space Research Organisation</title>
+  <link rel="icon" type="image/png" href="isro2.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div class="utility-bar">
+    <div class="container utility-inner">
+      <div class="utility-links">
+        <a href="#about">English</a><span aria-hidden="true">|</span><a href="#about" lang="hi">हिंदी</a><span aria-hidden="true">|</span>
+        <a href="#quick-links">Sitemap</a><span aria-hidden="true">|</span><a href="#contact">Contact us</a><span aria-hidden="true">|</span>
+        <a href="#feedback">Feedback</a><span aria-hidden="true">|</span><a href="#quick-links">RTI</a><span aria-hidden="true">|</span><a href="#careers">Careers</a>
+      </div>
+      <div class="access-tools" aria-label="Display settings">
+        <button type="button" id="decrease-text" aria-label="Decrease text size">A−</button>
+        <button type="button" id="reset-text" aria-label="Reset text size">A</button>
+        <button type="button" id="increase-text" aria-label="Increase text size">A+</button>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container brand-row">
+      <a class="brand" href="index.html" aria-label="ISRO homepage">
+        <img src="isro2.png" alt="Indian Space Research Organisation, Department of Space" class="brand-image">
+      </a>
+      <div class="header-note"><span class="orbit-icon" aria-hidden="true">✦</span><span>Exploring space<br><strong>for the benefit of humanity</strong></span></div>
+    </div>
+    <div class="nav-wrap">
+      <div class="container nav-inner">
+        <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="primary-nav"><span class="menu-icon" aria-hidden="true">☰</span> Menu</button>
+        <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+          <a class="nav-link active" href="#home">Home</a>
+          <div class="nav-item">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">About <span aria-hidden="true">⌄</span></button>
+            <div class="dropdown-menu">
+              <a href="#about">ISRO Profile</a><a href="#about">Vision and Mission</a><a href="#about">Organisation Structure</a><a href="#about">Centres and Units</a><a href="#leadership">Leadership</a>
+            </div>
+          </div>
+          <div class="nav-item">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">Missions <span aria-hidden="true">⌄</span></button>
+            <div class="dropdown-menu"><a href="#missions">Chandrayaan</a><a href="#missions">Aditya-L1</a><a href="#missions">Mars Orbiter Mission</a><a href="#missions">Upcoming Missions</a></div>
+          </div>
+          <div class="nav-item">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">Programmes <span aria-hidden="true">⌄</span></button>
+            <div class="dropdown-menu"><a href="#programmes">Launch Vehicles</a><a href="#programmes">Satellites</a><a href="#programmes">Human Spaceflight</a><a href="#programmes">Space Applications</a></div>
+          </div>
+          <a class="nav-link" href="#resources">Resources</a>
+          <a class="nav-link" href="#careers">Careers</a>
+          <a class="nav-link" href="#contact">Contact</a>
+        </nav>
+        <form class="search-form" role="search" id="site-search">
+          <label class="visually-hidden" for="search-input">Search this website</label>
+          <input id="search-input" type="search" placeholder="Search...">
+          <button type="submit" aria-label="Search">⌕</button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <video class="hero-video" autoplay muted loop playsinline poster="isro2.png">
+        <source src="Ch3_lander.mp4" type="video/webm">
+        Your browser does not support the video element.
+      </video>
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <p class="eyebrow"><span></span> India's journey beyond Earth</p>
+        <h1 id="hero-title">Reaching for the stars.<br><em>Inspiring a nation.</em></h1>
+        <p class="hero-copy">Discover the missions, science and innovation powering India's exploration of space.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#missions">Explore missions <span aria-hidden="true">→</span></a><a class="button button-ghost" href="#about">Discover ISRO</a></div>
+        <div class="hero-caption"><span class="live-dot"></span> Space exploration • Science • Innovation</div>
+      </div>
+      <a href="#highlights" class="scroll-cue" aria-label="Scroll to highlights">↓</a>
+    </section>
+
+    <div class="news-strip" aria-label="Latest highlight"><div class="container news-inner"><span class="news-label">SPACE UPDATE</span><p><strong>India's space story:</strong> Discover milestones, research, and upcoming mission highlights.</p><a href="#news">Explore updates <span aria-hidden="true">→</span></a></div></div>
+
+    <section class="section highlights-section" id="highlights">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow dark-eyebrow">A nation of explorers</p><h2>Space brings us <em>closer to tomorrow.</em></h2></div><p class="section-intro">From lunar exploration to Earth observation, India's space programme helps expand knowledge and create solutions for life on Earth.</p></div>
+        <div class="highlight-grid">
+          <article class="highlight-card card-moon"><div class="card-symbol" aria-hidden="true">☾</div><p class="card-kicker">LUNAR EXPLORATION</p><h3>Chandrayaan</h3><p>Learning more about the Moon through ambitious science and exploration.</p><a href="#missions" class="text-link">Explore lunar missions <span aria-hidden="true">↗</span></a></article>
+          <article class="highlight-card card-sun"><div class="card-symbol" aria-hidden="true">☼</div><p class="card-kicker">SOLAR SCIENCE</p><h3>Aditya-L1</h3><p>Studying our closest star to better understand the Sun and space weather.</p><a href="#missions" class="text-link">Explore solar science <span aria-hidden="true">↗</span></a></article>
+          <article class="highlight-card card-earth"><div class="card-symbol" aria-hidden="true">◎</div><p class="card-kicker">EARTH OBSERVATION</p><h3>Our living planet</h3><p>Space-based applications supporting communication, navigation and our environment.</p><a href="#programmes" class="text-link">Discover applications <span aria-hidden="true">↗</span></a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="missions-section section" id="missions">
+      <div class="container mission-layout">
+        <div class="mission-copy"><p class="eyebrow">Beyond the horizon</p><h2>Big questions.<br><em>Bold missions.</em></h2><p>Every mission is an opportunity to learn, innovate and inspire the next generation of scientists and engineers.</p><a class="button button-primary" href="#programmes">Discover our programmes <span aria-hidden="true">→</span></a></div>
+        <div class="mission-list">
+          <a class="mission-item" href="#resources"><span class="mission-number">01</span><span><strong>Chandrayaan programme</strong><small>Exploring the Moon</small></span><span class="mission-arrow" aria-hidden="true">↗</span></a>
+          <a class="mission-item" href="#resources"><span class="mission-number">02</span><span><strong>Aditya-L1</strong><small>Observing the Sun</small></span><span class="mission-arrow" aria-hidden="true">↗</span></a>
+          <a class="mission-item" href="#resources"><span class="mission-number">03</span><span><strong>Gaganyaan</strong><small>Human spaceflight programme</small></span><span class="mission-arrow" aria-hidden="true">↗</span></a>
+          <a class="mission-item" href="#resources"><span class="mission-number">04</span><span><strong>Launch vehicles</strong><small>Access to space</small></span><span class="mission-arrow" aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section resources-section" id="resources">
+      <div class="container"><div class="section-heading"><div><p class="eyebrow dark-eyebrow">Get involved</p><h2>Explore. Learn. <em>Take part.</em></h2></div><p class="section-intro">Find useful starting points for students, researchers and anyone curious about space.</p></div>
+        <div class="resource-grid">
+          <a class="resource-card" href="#news"><span class="resource-icon" aria-hidden="true">▤</span><span class="resource-title">News & updates</span><span class="resource-desc">Read announcements and mission highlights.</span><span class="resource-arrow" aria-hidden="true">↗</span></a>
+          <a class="resource-card" href="#careers"><span class="resource-icon" aria-hidden="true">✧</span><span class="resource-title">Careers</span><span class="resource-desc">Explore pathways in science and technology.</span><span class="resource-arrow" aria-hidden="true">↗</span></a>
+          <a class="resource-card" href="#students"><span class="resource-icon" aria-hidden="true">⌘</span><span class="resource-title">For students</span><span class="resource-desc">Discover learning and outreach opportunities.</span><span class="resource-arrow" aria-hidden="true">↗</span></a>
+          <a class="resource-card" href="#programmes"><span class="resource-icon" aria-hidden="true">◉</span><span class="resource-title">Space applications</span><span class="resource-desc">See how space technology supports everyday life.</span><span class="resource-arrow" aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section" id="students"><div class="container cta-inner"><div><p class="eyebrow">Curiosity has no limits</p><h2>The future belongs to<br><em>the curious.</em></h2><p>Keep asking questions. Keep exploring. Your journey into space science can start today.</p></div><a class="button button-light" href="#quick-links">Start exploring <span aria-hidden="true">→</span></a></div></section>
+
+    <section class="visually-hidden" id="about"><h2>About this project</h2><p>This is a student-created, ISRO-inspired front-end project for educational and portfolio purposes. It is not an official ISRO website.</p></section>
+    <section class="visually-hidden" id="leadership"><h2>Leadership</h2></section><section class="visually-hidden" id="programmes"><h2>Programmes</h2></section><section class="visually-hidden" id="news"><h2>News</h2></section><section class="visually-hidden" id="careers"><h2>Careers</h2></section><section class="visually-hidden" id="feedback"><h2>Feedback</h2></section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container footer-main"><div class="footer-brand"><img src="isro2.png" alt="ISRO banner"><p>A student-built front-end recreation inspired by India's space exploration journey.</p></div><div class="footer-column" id="quick-links"><h2>Quick links</h2><a href="#about">About this project</a><a href="#missions">Missions</a><a href="#resources">Resources</a><a href="#students">Students</a></div><div class="footer-column"><h2>Project details</h2><p>Built with HTML, CSS and vanilla JavaScript.</p><a href="README.md">Read project README</a><a href="#home">Back to top ↑</a></div></div>
+    <div class="footer-bottom"><div class="container footer-bottom-inner"><p>© <span id="current-year">2026</span> Student Project · Educational use only</p><p>Not affiliated with or endorsed by ISRO.</p></div></div>
+  </footer>
+</body>
+</html>
